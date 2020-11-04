@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/newProduct__style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>New Product</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header__content">
+            <a href="index.html"><img class="header__img" src="img/tienda.png" alt="Tienda"></a>
+            <nav>
+                <ul class="header__list">
+                    <li><a class="header__itens" href="">Home</a></li>
+                    <li><a class="header__itens" href="">About</a></li>
+                    <li><a class="header__itens" href="">Shop</a></li>
+                    <li><a class="header__itens" href="">Help</a></li>
+                    <li><a class="header__itens featured__item" href="new__products.html">New Product</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="container section__margin">
+            <div class="div__content">
+                <div>
+                    <h1>New Product</h1>
+                    <hr>
+                    <form class="form">
+                        <label class="form__label">Product:<input class="newProduct__input" type="text" name="product" placeholder="Mochila Preta" id="product"></label>
+                        <label class="form__label">Price:<input class="newProduct__input" type="text" name="price" placeholder="R$ 900,00" id="price"></label>
+                        <label class="form__label">Decription:<textarea class="newProduct__input textarea" name="description" placeholder="Conte um pouco sobre o produto" id="description"></textarea></label>
+                    </form>
+                </div>
+                <div class="productPicture__width">
+                    <h2>Product Picture</h2>
+                    <hr>
+                    <img id="productPicture" class="productPicture__img" src="https://images.pexels.com/photos/4301252/pexels-photo-4301252.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="qlq">
+                    <button class="productPicture__button" type="button">Select image</button>
+                </div>
+            </div>
+            <hr class="newProduct__separation">
+            <button id="addButton" class="newProduct__button" type="button">Add Product</button>
+            <button class="newProduct__button">Cancel</button>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container footer__content">
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Shop</a>
+            <a href="">Help</a>
+            <p>&copy Joe's Store</p>
+        </div>
+    </footer>
+    <script src="js/newProduct__script.js"></script>
+</body>
+
+</html>
