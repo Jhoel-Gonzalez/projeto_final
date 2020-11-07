@@ -35,15 +35,15 @@
                     <hr>
                     <form class="form">
                         <label class="form__label">Product:<input class="newProduct__input" type="text" name="product" placeholder="Mochila Preta" id="product"></label>
-                        <label class="form__label">Price:<input class="newProduct__input" type="text" name="price" placeholder="R$ 900,00" id="price"></label>
+                        <label class="form__label">Price:<input class="newProduct__input" type="text" name="price" placeholder="900.00" id="price"></label>
                         <label class="form__label">Decription:<textarea class="newProduct__input textarea" name="description" placeholder="Conte um pouco sobre o produto" id="description"></textarea></label>
                     </form>
                 </div>
                 <div class="productPicture__width">
                     <h2>Product Picture</h2>
-                    <hr>
-                    <img id="productPicture" class="productPicture__img" src="https://images.pexels.com/photos/4301252/pexels-photo-4301252.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="qlq">
-                    <button class="productPicture__button" type="button">Select image</button>
+                    <hr> 
+                    <img id="productPicture" class="productPicture__img" src="img/image.png" alt="imagen do produto">
+                    <input class="productPicture__button" type="file" accept="image/*" onchange="show()"></input>
                 </div>
             </div>
             <hr class="newProduct__separation">
@@ -52,14 +52,15 @@
         </section>
     </main>
     <footer class="footer">
-        <div class="container footer__content">
-            <a href="">Home</a>
-            <a href="">About</a>
-            <a href="">Shop</a>
-            <a href="">Help</a>
-            <p>&copy Joe's Store</p>
-        </div>
-    </footer>
+		<hr>
+		<div class="container footer__content">
+			<a  class="footer__itens" href="">Home</a>
+			<a  class="footer__itens" href="">About</a>
+			<a  class="footer__itens" href="">Shop</a>
+			<a  class="footer__itens" href="">Help</a>
+			<p class="footer__paragraph">&copy Joe's Store</p>
+		</div>
+	</footer>
     <script src="js/newProduct__script.js"></script>
 </body>
 
