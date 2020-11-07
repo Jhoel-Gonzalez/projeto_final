@@ -1,6 +1,12 @@
 :root {
     font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
+    font-size: 18px;
+}
+
+hr {
+    border-color: #d4d1d1;
+    border-top: none;
 }
 
 img {
@@ -33,7 +39,7 @@ img {
 }
 
 .featured__item {
-    background-color: #888;
+    background-color: #bdbbbb;
     color: black;
     padding: 10px;
     border-radius: 3px;
@@ -48,6 +54,16 @@ img {
     max-width: 1280px;
     margin: 0 auto;
 }
+.shoppingCart__options {
+    background-color: #bdbbbb;
+}
+
+.shoppingCart__details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 200px;
+}
 
 .shopping__cart {
     display: flex;
@@ -55,28 +71,33 @@ img {
     margin: 30px auto;
 }
 
-.cart__width {
-    width: 700px;
+.ShoppingCart__title {
+    font-size: 21px;
 }
 
-.shopping__cart .cart__width hr {
-    margin-bottom: 20px;
+
+
+.cart__width {
+    width: 700px;
 }
 
 .product__card {
     display: flex;
     justify-content: space-between;
-    margin: 10px 0;
+    margin: 20px 0;
 }
 
 .product__title {
     margin-bottom: 15px;
+    text-transform: uppercase;
 }
 
 .product__img {
     float: left;
     margin-right: 20px;
-    max-width: 75px;
+    width: 75px;
+    height: 75px;
+
 }
 
 .product__description {
@@ -85,16 +106,20 @@ img {
 }
 
 .product__input {
-    width: 70px;
-    margin: 30px 0;
+    width: 60px;
+    height: 25px;
+    margin: 22px 0;
+    text-align: center;
+    border: 1px #888 solid;
 }
 
 .product__button {
     width: 200px;
     padding: 10px;
-    background-color: #888;
+    background-color: #bdbbbb;
     border-radius: 5px;
     margin-right:5px; 
+    margin-top: 20px;
     border: none;
 }
 
@@ -117,17 +142,33 @@ img {
 }
 
 .summary__text {
-    margin: 15px 0;
+    margin: 20px 0;
 }
 
 .summary__cuponCode {
     font-weight: 600;
 }
 
-/* .footer {
+.summary__total {
+    font-size: 21px;
+}
 
-} */
+.footer {
+    margin-top: 300px;
+}
 
 .footer__content {
     text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.footer__itens {
+    text-decoration: none;
+    color: black;
+    margin: 0 10px;
+}
+
+.footer__paragraph {
+    margin-top: 15px;
 }
