@@ -1,6 +1,12 @@
 :root {
     font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
+    font-size: 18px;
+}
+
+hr {
+    border-color: #d4d1d1;
+    border-top: none;
 }
 
 img {
@@ -33,7 +39,7 @@ img {
 }
 
 .featured__item {
-    background-color: #888;
+    background-color: #bdbbbb;
     color: black;
     padding: 10px;
     border-radius: 3px;
@@ -73,18 +79,22 @@ img {
 
 .newProduct__input {
     width: 500px;
+    border: 1px #888 solid;
+    height: 25px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .textarea {
-    height: 243px;
+    height: 242px
 }
 
 .newProduct__button {
     width: 200px;
     padding: 10px;
-    background-color: #888;
+    background-color: #bdbbbb;
     border-radius: 5px;
     margin-right: 5px;
+    margin-top: 20px;
     border: none;
 }
 
@@ -99,12 +109,14 @@ img {
 
 .productPicture__img {
     margin: 10px 0;
+    height: 300px;
 }
 
 .productPicture__button {
-    width: 300px;
+    width: 285px;
     padding: 8px;
     background-color: #888;
+    border: none;
 }
 
 .productPicture__button:active {
@@ -112,10 +124,22 @@ img {
     color: white;
 }
 
-.newProduct__separation {
-    margin-bottom: 20px;
+.footer {
+    margin-top: 300px;
 }
 
 .footer__content {
     text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.footer__itens {
+    text-decoration: none;
+    color: black;
+    margin: 0 10px;
+}
+
+.footer__paragraph {
+    margin-top: 15px;
 }
