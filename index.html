@@ -28,17 +28,27 @@
 		</div>
 	</header>
 	<main>
-		<section>
-
+		<section class="shoppingCart__options" >
+			<ol class="container shoppingCart__details">
+				<li>
+					<span>1. Shopping Cart</span>
+				</li>
+				<li>
+					<span>2. Shippin Details</span>
+				</li>
+				<li>
+					<span>3. Payment Options</span>
+				</li>
+			</ol>
 		</section>
 		<section>
 			<div class="container shopping__cart">
 				<div id="cart__width" class="cart__width">
-					<h1>Shopping cart</h1>
+					<h1 class="ShoppingCart__title">Shopping cart</h1>
 					<hr>
-					<div id="listProduct">
-						
-					</div>
+					<ul id="listProduct">
+
+					</ul>
 					<div>
 						<hr>
 						<button class="product__button" type="button">Next</button>
@@ -47,7 +57,7 @@
 				</div>
 
 				<div class="summary__width">
-					<h3>Sumary</h3>
+					<h3 class="ShoppingCart__title">Sumary</h3>
 					<hr>
 					<p class="summary__text summary__cuponCode">Enter cupon Code</p>
 					<hr>
@@ -65,7 +75,7 @@
 					</div>
 					<hr>
 					<div class="products__summary">
-						<h2>TOTAL</h2>
+						<h2 class="summary__total">TOTAL</h2>
 						<span>$613</span>
 					</div>
 				</div>
@@ -73,12 +83,13 @@
 		</section>
 	</main>
 	<footer class="footer">
+		<hr>
 		<div class="container footer__content">
-			<a href="">Home</a>
-			<a href="">About</a>
-			<a href="">Shop</a>
-			<a href="">Help</a>
-			<p>&copy Joe's Store</p>
+			<a class="footer__itens" href="">Home</a>
+			<a class="footer__itens" href="">About</a>
+			<a class="footer__itens" href="">Shop</a>
+			<a class="footer__itens" href="">Help</a>
+			<p class="footer__paragraph">&copy Joe's Store</p>
 		</div>
 	</footer>
 	<script src="js/script.js"></script>
