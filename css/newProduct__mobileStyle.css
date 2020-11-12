@@ -1,0 +1,46 @@
+@media only screen and (max-width: 768px) {
+    .container {
+        max-width: calc(100% - 30px)
+    }
+    .form__container {
+        width: 100%
+    }
+    .newProduct__input {
+        margin-top: 10px;
+        width: 100%;
+    }
+    .div__content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .productPicture__width {
+        max-width: 100%;
+        margin: 20px 0;
+    }
+    .buttons {
+        display: flex;
+        justify-content: space-between;
+    }
+    .form {
+        width: 100%;
+    }
+    .form__label {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 605px) {
+    .header__list {
+        display: none;
+    }
+    .menu__icon {
+        display: block;
+        width: 30px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .productPicture__button {
+        width: 100%;
+    }
+}
