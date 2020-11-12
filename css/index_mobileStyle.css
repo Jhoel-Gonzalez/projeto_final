@@ -64,7 +64,7 @@
     .product__description {
         line-height: 1.61;
         max-width: 200px;
-        margin: 0 auto;
+        margin: 0 auto 10px auto ;
     }
     
     .cart__width {
