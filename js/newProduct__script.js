@@ -1,6 +1,7 @@
 const addButton = document.querySelector("#addButton")
 const form = document.querySelector(".form")
 const productPicture = document.querySelector("#productPicture")
+const addImageButton = document.querySelector("#selectImage")
 
 addButton.addEventListener("click", (event) => {
     event.preventDefault()
@@ -9,7 +10,8 @@ addButton.addEventListener("click", (event) => {
         name: form.elements.product.value,
         price: form.elements.price.value,
         description: form.elements.description.value,
-        picture: productPicture.src
+        picture: productPicture.src,
+        quantity: 1
     }
 
     const products = localStorage.getItem("products") ? JSON.parse(localStorage.getItem("products")) : []
@@ -19,12 +21,12 @@ addButton.addEventListener("click", (event) => {
     location.replace(`${location.protocol}//${location.host}/index.html`)
 })
 
-window.addEventListener('load', function() {
-    document.querySelector('input[type="file"]').addEventListener('change', function show() {
-        if (this.files && this.files[0]) {
-            let img = document.querySelector('#productPicture');  // $('img')[0]
-            img.src = URL.createObjectURL(this.files[0]); // set src to blob url
-            img.onload = imageIsLoaded;
-        }
-    });
-  });
+addImageButton.addEventListener("click", (evento) => {
+    evento.preventDefault()
+
+    const imageSrc = prompt("Digite aqui o endereço da sua imagen")
+    const img = document.querySelector("#productPicture")
+    if (imageSrc) {
+        img.src = imageSrc
+    }
+})
