@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/index_mobileStyle.css">
 	<link
 		href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
 		rel="stylesheet">
@@ -13,82 +14,86 @@
 </head>
 
 <body>
-	<header class="header">
-		<div class="container header__content">
-			<a href=""><img class="header__img" src="img/tienda.png" alt="Tienda"></a>
-			<nav>
-				<ul class="header__list">
-					<li><a class="header__itens" href="">Home</a></li>
-					<li><a class="header__itens" href="">About</a></li>
-					<li><a class="header__itens" href="">Shop</a></li>
-					<li><a class="header__itens" href="">Help</a></li>
-					<li><a class="header__itens featured__item" href="new__products.html">New Product</a></li>
-				</ul>
-			</nav>
-		</div>
-	</header>
-	<main>
-		<section class="shoppingCart__options" >
-			<ol class="container shoppingCart__details">
-				<li>
-					<span>1. Shopping Cart</span>
-				</li>
-				<li>
-					<span>2. Shipping Details</span>
-				</li>
-				<li>
-					<span>3. Payment Options</span>
-				</li>
-			</ol>
-		</section>
-		<section>
-			<div class="container shopping__cart">
-				<div id="cart__width" class="cart__width">
-					<h1 class="ShoppingCart__title">Shopping cart</h1>
-					<hr>
-					<ul id="listProduct">
-
+	<div class="content">
+		<header class="header">
+			<div class="container header__content">
+				<a href="index.html"><img class="header__img" src="img/tienda.png" alt="Tienda"></a>
+				<nav>
+					<ul class="header__list">
+						<li><a class="header__itens" href="index.html">Home</a></li>
+						<li><a class="header__itens" href="about.html">About</a></li>
+						<li><a class="header__itens" href="shop.html">Shop</a></li>
+						<li><a class="header__itens" href="help.html">Help</a></li>
+						<li><a class="header__itens featured__item" href="new__products.html">New Product</a></li>
 					</ul>
-					<div>
+				</nav>
+				<img class="menu__icon" src="img/menu.svg">
+			</div>
+		</header>
+		<main>
+			<section class="shoppingCart__stages">
+				<ul class="container shoppingCart__details">
+					<li>
+						<span>1. Shopping Cart</span>
+					</li>
+					<li>
+						<span>2. Shipping Details</span>
+					</li>
+					<li>
+						<span>3. Payment Options</span>
+					</li>
+				</ul>
+			</section>
+			<section>
+				<div class="container shopping__cart">
+					<div id="cart__width" class="cart__width">
+						<h1 class="ShoppingCart__title">Shopping cart</h1>
 						<hr>
+						<ul id="listProduct" class="listProduct">
+							
+						</ul>
+					</div>
+					<div class="summary__width">
+						<h3 class="ShoppingCart__title">Sumary</h3>
+						<hr>
+						<p class="summary__text summary__cuponCode">Enter cupon Code</p>
+						<hr>
+						<div class="products__summary">
+							<div>
+								<p class="summary__text">SUBTOTAL</p>
+								<p class="summary__text">SHIPPING</p>
+								<p class="summary__text">TAXES</p>
+							</div>
+							<div class="align__summaryItens">
+								<p id="subTotal" class="summary__text">R$ 0</p>
+								<p id="shipping" class="summary__text">R$ 0</p>
+								<p id="taxes" class="summary__text">R$ 0</p>
+							</div>
+						</div>
+						<hr>
+						<div class="products__summary">
+							<h2 class="summary__total">TOTAL</h2>
+							<span id="total">R$ 0</span>
+						</div>
+					</div>
+				</div>
+				<div class="container">
+					<hr>
+					<div class="buttons">
 						<button class="product__button" type="button">Next</button>
 						<button class="product__button" type="button">Cancel</button>
 					</div>
 				</div>
-
-				<div class="summary__width">
-					<h3 class="ShoppingCart__title">Sumary</h3>
-					<hr>
-					<p class="summary__text summary__cuponCode">Enter cupon Code</p>
-					<hr>
-					<div class="products__summary">
-						<div>
-							<p class="summary__text">SUBTOTAL</p>
-							<p class="summary__text">SHIPPING</p>
-							<p class="summary__text">TAXES</p>
-						</div>
-						<div class="align__summaryItens">
-							<p class="summary__text">$600</p>
-							<p class="summary__text">FREE</p>
-							<p class="summary__text">$13</p>
-						</div>
-					</div>
-					<hr>
-					<div class="products__summary">
-						<h2 class="summary__total">TOTAL</h2>
-						<span>$613</span>
-					</div>
-				</div>
-			</div>
-		</section>
-	</main>
+			</section>
+		</main>
+	</div>
 	<footer class="footer">
 		<hr>
 		<div class="container footer__content">
-			<a class="footer__itens" href="">Home</a>
-			<a class="footer__itens" href="">About</a>
-			<a class="footer__itens" href="">Shop</a>
-			<a class="footer__itens" href="">Help</a>
+			<a class="footer__itens" href="index.html">Home</a>
+			<a class="footer__itens" href="about.html">About</a>
+			<a class="footer__itens" href="shop.html">Shop</a>
+			<a class="footer__itens" href="help.html">Help</a>
 			<p class="footer__paragraph">&copy Joe's Store</p>
 		</div>
 	</footer>
