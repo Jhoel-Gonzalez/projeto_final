@@ -18,11 +18,8 @@ addButton.addEventListener("click", (event) => {
         alert("Digite apenas números!")
         form.elements.price.select()
         return false
-    } else if (Number(form.elements.product.value)) {
-        alert("Digite apenas letras!")
-        form.elements.product.select()
-        return false
-    } else if ((form.elements.price.value === ("") && form.elements.product.value === ("") && form.elements.description.value === (""))) {
+    }  else if ((form.elements.price.value === ("") && form.elements.product.value === ("") && form.elements.description.value === ("") ||
+        form.elements.price.value === ("") || form.elements.product.value === ("") || form.elements.description.value === (""))) {
         alert("Os campos de entrada estão vazios")
         return false
     } else if (form.elements.description.value === ("")) {
