@@ -8,7 +8,7 @@ addButton.addEventListener("click", (event) => {
 
     const product = {
         name: form.elements.product.value,
-        price: form.elements.price.value,
+        price: form.elements.price.value.replace(",", "."),
         description: form.elements.description.value,
         picture: productPicture.src,
         quantity: 1
